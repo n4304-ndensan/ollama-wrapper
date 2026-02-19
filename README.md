@@ -27,6 +27,7 @@ AsyncOllamaTextClient の概要
 
 
 使い方（最小）
+```py
   import asyncio
   import logging
   from ollama_wrapper import AsyncOllamaTextClient, ClientConfig
@@ -49,9 +50,10 @@ AsyncOllamaTextClient の概要
           await client.close()
 
   asyncio.run(main)
-
+```
 
 JSONが欲しい場合（推奨：system_promptを固定）
+```py
   import asyncio
   from ollama_wrapper import AsyncOllamaTextClient, ClientConfig
   from ollama_wrapper.prompts import JSON_ONLY_SYSTEM_PROMPT
@@ -69,6 +71,7 @@ JSONが欲しい場合（推奨：system_promptを固定）
           await client.close()
 
   asyncio.run(main)
+```
 
 
 手順まとめ
